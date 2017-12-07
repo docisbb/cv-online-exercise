@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background: #d3d3d3;
+    box-sizing: border-box;
+}
+
+/* ----- Estilos Generales ----- */
+
+h1 {
+    font-size: 45px;
+    color: #302f2f;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    color: #0245A3;
+    padding-bottom: 7px;    
+    border-bottom: 2px solid #0245A3;
+}
+
+h3 {
+    font-size: 24px;
+    color: #0245A3;
+}
+
+h4 {
+    font-size: 18px;
+    color: #0245A3;
+}
+
+ul li{
+    list-style: none;
+}
+
+.cv {
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* ----- Estilos del Perfil ----- */
+
+.perfil {
+    background: rgb(32, 138, 106);
+    float: left;
+    width: 26%;
+    margin: 30px 0;
+    border-bottom: 1.5px solid #8c8c8c;
+}
+
+.perfil ul {
+    margin: 0;
+}
+
+.info {
+    text-transform: uppercase;
+    height: 25px;
+    text-align: right;
+    padding: 25px;
+    color: #7c7f83;
+    background: #2A2F35;    
+    border-bottom: 1px solid #1E2227;
+}
+
+.info span {
+    color: #7c7f83;
+}
+
+.info img {
+    width: 28px;    
+    float: left;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#foto-perfil {
+    position: relative;
+    width: 100%;
+}
+
+#social {
+    background: #fff;
+    padding-left: 55px;
+}
+
+#social img {
+    width: 35px;
+    height: 35px;
+    margin: 15px 5px 10px;
+}
+
+/* ----- Estilos del Contenido ----- */
+
+.contenido {
+    float: right;
+    width: 72.5%;
+    margin: 30px 0;
+}
+
+.proyectos {
+    overflow: auto;
+}
+
+.proyectos img {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#presentacion li {
+    padding: 8px 0;
+    text-transform: uppercase;    
+    border-bottom: 1px dashed #1a7783;
+}
+
+#presentacion,
+#formacion,
+#experiencia,
+#portfolio {
+    background: #fff;
+    padding: 40px;
+    border-bottom: 1.5px solid #8c8c8c;
+}
+
+#presentacion,
+#formacion,
+#experiencia {
+    margin-bottom: 10px;
+}
+
+#portfolio {
+    margin-bottom: 15px;
+}
