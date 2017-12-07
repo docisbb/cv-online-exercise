@@ -2,10 +2,15 @@
     padding: 0;
 }
 
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Varela Round', sans-serif;
     background: #d3d3d3;
-    box-sizing: border-box;
 }
 
 /* ----- Estilos Generales ----- */
@@ -47,9 +52,10 @@ ul li{
 .perfil {
     background: rgb(32, 138, 106);
     float: left;
-    width: 26%;
+    width: 18%;
     margin: 30px 0;
     border-bottom: 1.5px solid #8c8c8c;
+    position: fixed;
 }
 
 .perfil ul {
@@ -58,12 +64,25 @@ ul li{
 
 .info {
     text-transform: uppercase;
-    height: 25px;
+    height: 60px;
+}
+
+.info button {
+    border: none;
+    height: 60px;
+    width: 100%;
     text-align: right;
-    padding: 25px;
-    color: #7c7f83;
-    background: #2A2F35;    
+    background: #2A2F35;
+    padding: 0px 25px;
     border-bottom: 1px solid #1E2227;
+}
+
+.info button:hover {
+    background: rgb(6, 37, 82);
+    -webkit-transition: background-color .5s ease;
+    -moz-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+    transition: background-color .5s ease;
 }
 
 .info span {
@@ -75,7 +94,7 @@ ul li{
     float: left;
 }
 
-a:-webkit-any-link {
+a:-webkit-link {
     text-decoration: none;
 }
 
@@ -128,7 +147,7 @@ a:link {
 #experiencia,
 #portfolio {
     background: #fff;
-    padding: 40px;
+    padding: 10px 40px 20px;
     border-bottom: 1.5px solid #8c8c8c;
 }
 
