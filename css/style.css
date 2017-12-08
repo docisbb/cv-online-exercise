@@ -1,14 +1,10 @@
 * {
     padding: 0;
-}
-
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-body {
+body {    
+    margin: 0;
     font-family: 'Varela Round', sans-serif;
     background: #d3d3d3;
 }
@@ -16,33 +12,37 @@ body {
 /* ----- Estilos Generales ----- */
 
 h1 {
-    font-size: 45px;
+    font-size: 2.8125em;
     color: #302f2f;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 30px;
-    color: #0245A3;
+    font-size: 1.875em; 
+    color: #1C3869;
     padding-bottom: 7px;    
-    border-bottom: 2px solid #0245A3;
+    border-bottom: 2px solid #EA003A;    
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #0245A3;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #0245A3;
+}
+
+p {
+    letter-spacing: .25px;
 }
 
 ul li{
     list-style: none;
 }
 
-.cv {
+#cv {
     margin: auto;
     max-width: 1200px;
 }
@@ -52,9 +52,9 @@ ul li{
 .perfil {
     background: rgb(32, 138, 106);
     float: left;
-    width: 18%;
+    width: 305px;
     margin: 30px 0;
-    border-bottom: 1.5px solid #8c8c8c;
+    box-shadow: 0px 15px 15px -10px #777;
     position: fixed;
 }
 
@@ -73,24 +73,28 @@ ul li{
     width: 100%;
     text-align: right;
     background: #2A2F35;
+    cursor: pointer;
     padding: 0px 25px;
     border-bottom: 1px solid #1E2227;
 }
 
 .info button:hover {
-    background: rgb(6, 37, 82);
-    -webkit-transition: background-color .5s ease;
-    -moz-transition: background-color .5s ease;
-    -o-transition: background-color .5s ease;
+    background: #fff;
     transition: background-color .5s ease;
 }
 
-.info span {
+button {
+    color: #7c7f83;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+}
+
+button:hover {
     color: #7c7f83;
 }
 
 .info img {
-    width: 28px;    
+    width: 28px;
     float: left;
 }
 
@@ -128,6 +132,7 @@ a:link {
 
 .proyectos {
     overflow: auto;
+    padding-left: 11.5%;
 }
 
 .proyectos img {
@@ -139,24 +144,149 @@ a:link {
 #presentacion li {
     padding: 8px 0;
     text-transform: uppercase;    
-    border-bottom: 1px dashed #1a7783;
+    border-bottom: 7px groove #a2c4f1;
+}
+
+#presentacion ul {
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
 }
 
 #presentacion,
 #formacion,
 #experiencia,
-#portfolio {
+#portfolio,
+#social-media {
     background: #fff;
-    padding: 10px 40px 20px;
-    border-bottom: 1.5px solid #8c8c8c;
+    padding: 10px 40px 30px;
+    box-shadow: 10px 10px 10px -5px #777;
 }
 
 #presentacion,
 #formacion,
-#experiencia {
-    margin-bottom: 10px;
+#experiencia,
+#social-media {
+    margin-bottom: 25px;
 }
 
 #portfolio {
     margin-bottom: 15px;
+}
+
+#social-media {
+    display: none;
+}
+
+#social-media ul {
+    margin-left: 100px;
+}
+
+#social-media img {    
+    width: 60px;
+    height: 60px;
+}
+
+#social-media li {
+    display: inline;
+    padding: 20px;
+    margin-left: 35px;
+}
+
+/* ----- Media Queries ----- */
+
+@media (max-width: 1300px) {
+
+    #cv {
+        margin: auto;
+        max-width: 1100px;
+    }
+
+    .contenido {
+        width: 70%;
+    }
+
+    .proyectos {
+        padding-left: 17.5%;
+    }
+
+    #social-media ul {
+        margin-left: 45px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    #cv {
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    .contenido {
+        width: 67.5%;
+    }
+
+    .proyectos {
+        padding-left: 15%;
+    }
+
+    #social-media ul {
+        margin-left: -5px;
+    }
+
+}
+
+@media (max-width: 1200px) and (max-width: 1100px) {
+    
+    #cv {
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    .contenido {
+        width: 100%;
+        margin-top: 185px;
+    }
+
+    .proyectos {
+        padding-left: 4.5%;
+    }
+
+    #social-media {
+        display: inherit;
+    }
+
+    #social-media ul {
+        margin-left: 145px;
+    }
+
+    .perfil {
+        background: rgb(32, 138, 106);
+        display: inherit;
+        width: 100%;
+        margin: 0;
+        height: 150px;
+        float: none;
+        border-bottom: 5px solid rgb(10, 82, 61);
+        box-shadow: none;
+    }
+
+    #foto-perfil {
+        width: 150px;
+        border-radius: 50%;
+        margin-left: 40%;;
+    }
+
+    .info {
+        width: 20%;
+    }
+
+    .perfil li {
+        display: inline-block;
+    }
+
+    #social {
+        display: none;
+    }
+
 }
