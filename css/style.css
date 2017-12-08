@@ -98,6 +98,10 @@ button:hover {
     float: left;
 }
 
+.social-media {
+    display: none;
+}
+
 a:-webkit-link {
     text-decoration: none;
 }
@@ -216,51 +220,14 @@ a:link {
 }
 
 @media (max-width: 1200px) {
-
-    #cv {
-        margin: auto;
-        max-width: 1000px;
-    }
-
-    .contenido {
-        width: 67.5%;
-    }
-
-    .proyectos {
-        padding-left: 15%;
-    }
-
-    #social-media ul {
-        margin-left: -5px;
-    }
-
-}
-
-@media (max-width: 1200px) and (max-width: 1100px) {
     
     #cv {
         margin: auto;
-        max-width: 1000px;
+        max-width: initial;
     }
-
-    .contenido {
-        width: 100%;
-        margin-top: 185px;
-    }
-
-    .proyectos {
-        padding-left: 4.5%;
-    }
-
-    #social-media {
-        display: inherit;
-    }
-
-    #social-media ul {
-        margin-left: 145px;
-    }
-
+    /* ----- Perfil ----- */
     .perfil {
+        position: initial;
         background: rgb(32, 138, 106);
         display: inherit;
         width: 100%;
@@ -276,17 +243,251 @@ a:link {
         border-radius: 50%;
         margin-left: 40%;;
     }
-
+    
     .info {
         width: 20%;
+        margin: -2px;
+    }
+    
+    .info img {
+        display: none;
     }
 
-    .perfil li {
-        display: inline-block;
+    .info button {
+        text-align: center;
     }
 
     #social {
         display: none;
     }
+    
+    /* ----- Contenido ----- */
+
+    .contenido {
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 100px;
+    }
+
+    .proyectos {
+        padding-left: 2.5%;
+    }
+    
+    .perfil li {
+        display: inline-block;
+    }
+
+    #social-media {
+        display: inherit;
+    }
+
+    #social-media ul {
+        margin-left: 15%;
+    }
 
 }
+
+
+@media (max-width: 1020px) {
+
+    .proyectos {
+        padding-left: 5%;
+    }
+    
+    .proyectos img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #social-media ul {
+        margin-left: 10%;
+    }
+
+}
+
+
+@media (max-width: 960px) {
+
+    .proyectos {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 910px) {
+
+    .proyectos img {
+        width: 170px;
+        height: 170px;
+    }    
+
+    #social-media ul {
+        margin-left: 5%;
+    }
+
+
+    .info img {
+        display: inherit;
+    }
+
+    .info strong {
+        display: none;
+    }
+
+    .info button {
+        padding-left: 42%;
+    }
+
+}
+
+@media (max-width: 860px) {
+
+    .proyectos {
+        padding-left: 10%;
+    }   
+    
+}
+
+@media (max-width: 790px) {
+
+    .proyectos {
+        padding-left: 5%;
+    }
+
+    #social-media ul {
+        margin-left: 0%;
+    }
+
+}
+
+@media (max-width: 710px) {
+
+    .proyectos {
+        padding-left: 2.5%;
+    }        
+
+    .proyectos img {
+        width: 155px;
+        height: 155px;
+    }
+
+    #social-media li {
+        margin-left: 6%;
+    }
+
+    #social-media ul {
+        margin-left: -5%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .info button {
+        padding-left: 35%;
+    }
+    
+    .proyectos {
+        padding-left: 0;
+    }    
+
+    #social-media ul {
+        margin-left: 0;
+    }
+
+    #social-media li {
+        margin-left: 2.5%;
+    }
+
+}
+
+@media (max-width: 625px) {
+
+    .proyectos img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .proyectos {
+        padding-left: 0%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    
+
+    .proyectos img {
+        width: 170px;
+        height: 170px;
+    }
+
+}
+
+@media (max-width: 515px) {
+
+    .proyectos {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    #foto-perfil {
+        margin-left: 20%;
+    }
+
+    .info button {
+        padding-left: 22%;
+    }
+
+    .proyectos {
+        padding-left: 0;
+    }
+
+    .proyectos img {
+        width: 144px;
+        height: 144px;
+    }
+
+    #social-media ul {
+        margin-left: -10%;
+    }
+
+    #social-media img {
+        margin-bottom: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    #social-media li {
+        display: inherit;
+        margin-left: 15%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.17em;
+    }
+
+    p {
+        letter-spacing: inherit;
+    }
+
+}
+
+
+
+
+
+
+
