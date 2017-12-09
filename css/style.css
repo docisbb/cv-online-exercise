@@ -32,15 +32,23 @@ h3 {
 h4 {
     font-size: 1.125em;
     color: #0245A3;
+    margin-bottom: 7px;
 }
 
 p {
     letter-spacing: .25px;
+    margin-top: 25px;
 }
 
 ul li{
     list-style: none;
 }
+
+span img {
+    height: 25px;
+    width: 25px;
+    vertical-align: text-bottom;
+} 
 
 #cv {
     margin: auto;
@@ -50,7 +58,7 @@ ul li{
 /* ----- Estilos del Perfil ----- */
 
 .perfil {
-    background: rgb(32, 138, 106);
+    background: rgb(42, 74, 117);
     float: left;
     width: 305px;
     margin: 30px 0;
@@ -59,6 +67,7 @@ ul li{
 }
 
 .perfil ul {
+    padding: 0;
     margin: 0;
 }
 
@@ -198,27 +207,6 @@ a:link {
 
 /* ----- Media Queries ----- */
 
-@media (max-width: 1300px) {
-
-    #cv {
-        margin: auto;
-        max-width: 1100px;
-    }
-
-    .contenido {
-        width: 70%;
-    }
-
-    .proyectos {
-        padding-left: 17.5%;
-    }
-
-    #social-media ul {
-        margin-left: 45px;
-    }
-
-}
-
 @media (max-width: 1200px) {
     
     #cv {
@@ -228,20 +216,22 @@ a:link {
     /* ----- Perfil ----- */
     .perfil {
         position: initial;
-        background: rgb(32, 138, 106);
+        background: rgb(42, 74, 117);
         display: inherit;
         width: 100%;
         margin: 0;
-        height: 150px;
+        height: 152px;
         float: none;
-        border-bottom: 5px solid rgb(10, 82, 61);
+        border-bottom: 5px solid rgb(13, 43, 84);
         box-shadow: none;
     }
 
     #foto-perfil {
-        width: 150px;
-        border-radius: 50%;
-        margin-left: 40%;;
+        height: 152px;
+        width: 127px;
+        border-radius: 5%;
+        border: 5px solid rgb(13, 43, 84);
+        margin: 0 44%;
     }
     
     .info {
@@ -257,6 +247,10 @@ a:link {
         text-align: center;
     }
 
+    .perfil ul {
+        margin: 2px -5px;
+    }
+
     #social {
         display: none;
     }
@@ -270,7 +264,7 @@ a:link {
     }
 
     .proyectos {
-        padding-left: 2.5%;
+        padding: 0 16%;
     }
     
     .perfil li {
@@ -282,16 +276,27 @@ a:link {
     }
 
     #social-media ul {
-        margin-left: 15%;
+        margin: 5% 16% 3%;
     }
 
 }
 
+@media (max-width: 1090px) {
+
+    .proyectos {
+        padding: 0 13%;
+    }
+
+    #social-media ul {
+        margin: 5% 13%;
+    }
+
+}
 
 @media (max-width: 1020px) {
 
     .proyectos {
-        padding-left: 5%;
+        padding: 0 15%;
     }
     
     .proyectos img {
@@ -300,21 +305,25 @@ a:link {
     }
 
     #social-media ul {
-        margin-left: 10%;
+        margin: 5% 12.5%;
     }
 
 }
 
 
-@media (max-width: 960px) {
+@media (max-width: 965px) {
 
     .proyectos {
-        padding-left: 0;
+        padding: 0 12%;
+    }
+
+    #social-media ul {
+        margin: 5% 9%;
     }
 
 }
 
-@media (max-width: 910px) {
+@media (max-width: 940px) {
 
     .proyectos img {
         width: 170px;
@@ -322,10 +331,13 @@ a:link {
     }    
 
     #social-media ul {
-        margin-left: 5%;
+        margin: 5%;
     }
 
-
+    #foto-perfil {
+        margin: 0 50% 0 42.5%;
+    }
+    
     .info img {
         display: inherit;
     }
@@ -343,19 +355,27 @@ a:link {
 @media (max-width: 860px) {
 
     .proyectos {
-        padding-left: 10%;
+        padding: 0 8%;
     }   
+
+    #foto-perfil {
+        margin: 0 42%;
+    }
     
 }
 
 @media (max-width: 790px) {
 
+    #foto-perfil {
+        margin: 0 40.5%;
+    }
+
     .proyectos {
-        padding-left: 5%;
+        padding: 0 3%;
     }
 
     #social-media ul {
-        margin-left: 0%;
+        margin: 8% 0% 5%;
     }
 
 }
@@ -363,7 +383,7 @@ a:link {
 @media (max-width: 710px) {
 
     .proyectos {
-        padding-left: 2.5%;
+        padding-left: 2%;
     }        
 
     .proyectos img {
@@ -371,12 +391,16 @@ a:link {
         height: 155px;
     }
 
+    #foto-perfil {
+        margin: 0 41%;
+    }
+
     #social-media li {
         margin-left: 6%;
     }
 
     #social-media ul {
-        margin-left: -5%;
+        margin: 6% -7%;
     }
 
 }
@@ -388,39 +412,62 @@ a:link {
     }
     
     .proyectos {
-        padding-left: 0;
+        padding: 0;
     }    
 
+    #foto-perfil {
+        margin: 0 39%;
+    }
+
     #social-media ul {
-        margin-left: 0;
+        margin-left: -2%;
     }
 
     #social-media li {
-        margin-left: 2.5%;
+        margin-left: 2%;
     }
 
 }
 
 @media (max-width: 625px) {
 
+    #foto-perfil {
+        margin: 0 39%;
+    }
+
     .proyectos img {
-        width: 150px;
-        height: 150px;
+        width: 145px;
+        height: 145px;
     }
 
     .proyectos {
-        padding-left: 0%;
+        padding: 0;
     }
 
 }
 
 @media (max-width: 600px) {
 
-    
+    #foto-perfil {
+        margin: 0 38%;
+    }
 
-    .proyectos img {
-        width: 170px;
-        height: 170px;
+    .proyectos {
+        padding: 0 10%;
+    }
+
+    #social-media ul {
+        margin-left: -2%;
+    }    
+
+    #social-media li {
+        margin: 10%;
+    }
+
+    #social-media img {
+        width: 70px;
+        height: 70px;
+        margin-top: 3%;
     }
 
 }
@@ -428,66 +475,72 @@ a:link {
 @media (max-width: 515px) {
 
     .proyectos {
-        padding-left: 0;
+        padding: 0 8%;
     }
-
-}
-
-@media (max-width: 300px) {
 
     #foto-perfil {
-        margin-left: 20%;
-    }
-
-    .info button {
-        padding-left: 22%;
-    }
-
-    .proyectos {
-        padding-left: 0;
-    }
-
-    .proyectos img {
-        width: 144px;
-        height: 144px;
+        margin: 0 36%;
     }
 
     #social-media ul {
-        margin-left: -10%;
+        margin-left: -2%;
+    }    
+
+    #social-media li {
+        margin: 10%;
     }
 
     #social-media img {
-        margin-bottom: 20px;
-        width: 80px;
-        height: 80px;
-    }
-
-    #social-media li {
-        display: inherit;
-        margin-left: 15%;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.17em;
-    }
-
-    p {
-        letter-spacing: inherit;
+        width: 70px;
+        height: 70px;
+        margin-top: 3%;
     }
 
 }
 
+@media (max-width: 490px) {
 
+    .proyectos {
+        padding: 0px 15%;
+    }
 
+    .proyectos img {
+        width: 200px;
+        height: 200px;
+    }
 
+    #foto-perfil {
+        margin: 0 35%;
+    }
 
+    #social-media ul {
+        margin-left: 0;
+    }    
 
+    #social-media li {
+        margin: 7%;
+    }
 
+    #social-media img {
+        width: 70px;
+        height: 70px;
+        margin-top: 3%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    
+    .proyectos {
+        padding: 0px 10%;
+    }
+
+    #foto-perfil {
+        margin: 0 33%;
+    }
+
+    #social-media li {
+        margin: 4%;
+    }
+
+}
